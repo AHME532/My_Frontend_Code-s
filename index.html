@@ -35,7 +35,7 @@
         height:100%;
         object-fit:cover;
     }
-        .carousel-item {
+    .carousel-item {
     position: relative;
     }
     .carousel-item::before {
@@ -57,6 +57,37 @@
     #big-img-section{
       justify-content: center;
       display: flex;
+    }
+    #lab-section{
+      display: grid;
+      grid-template-columns: 350px 350px 350px;
+      justify-content: space-evenly;
+    }
+    #scilab{
+      grid-column: 1/3;
+      grid-row: 1/1;
+    }
+    #comlab{
+      grid-column: 2/3;
+      grid-row: 2/1;
+    }
+    #library{
+      grid-column: 3/3;
+      grid-row: 3/1;
+    }
+    .part{
+      width: 350px;
+      border: 5px solid black;
+      border-radius: 2em;
+      background-color: #006736;
+    }
+    .pics img{
+    padding: 0px;
+    border-radius: 2em;
+    }
+    .info{
+      padding: 7px 5px 5px 5px;
+      color: white;
     }
     /* media queries for responsiveness of header & main section*/
     @media (min-width: 3200px) and (max-width:5400px)  {
@@ -112,6 +143,32 @@
       #cap11,#cap22,#cap33{
         font-size: 80px;
       }      
+      #lab-sec{
+        font-size: 80px;
+      }
+      #lab-section{
+        display: grid;
+        grid-template-columns: 800px 800px 800px;
+        justify-content: center;
+        gap: 80px;
+      }
+      .part{
+        width: 800px;
+        border: 10px solid black;
+        border-radius: 3em;
+        background-color: #006736;
+        margin-top: 10px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 3em;
+      }
+      .info{
+        padding: 10px;
+        color: white;
+        font-size: 35px;
+        text-align: justify;
+      }                           
     }     
     @media (min-width: 2700px) and (max-width:3200px)  {
       #p1,#p2,#p3,#p4,#p5,#p6,#p7{
@@ -318,6 +375,43 @@
       #next,#previous{
         visibility: hidden;
       }      
+      #lab-sec{
+        font-size: 70px;
+      }
+      #lab-section{
+        display: grid;
+        grid-template-columns: 400px;
+        justify-content: space-evenly;
+      }
+      #scilab{
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
+      #comlab{
+        grid-column: 2/2;
+        grid-row: 1/1;
+      }
+      #library{
+        grid-column: 3/3;
+        grid-row: 1/1;
+      }
+      .part{
+        width: 400px;
+        border: 6px solid black;
+        border-radius: 2em;
+        background-color: #006736;
+        margin-top: 10px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 2em;
+      }
+      .info{
+        padding: 10px;
+        color: white;
+        font-size: 19px;
+        text-align: justify;
+      }       
     }
     @media (min-width: 1640px) and (max-width:1915px) {
       .fst-content{
@@ -351,6 +445,43 @@
         justify-content: center;
         display: flex;
       }
+      #lab-sec{
+        font-size: 37px;
+      }
+      #lab-section{
+        display: grid;
+        grid-template-columns: 320px;
+        justify-content: space-evenly;
+      }
+      #scilab{
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
+      #comlab{
+        grid-column: 2/2;
+        grid-row: 1/1;
+      }
+      #library{
+        grid-column: 3/3;
+        grid-row: 1/1;
+      }
+      .part{
+        width: 320px;
+        border: 6px solid black;
+        border-radius: 2em;
+        background-color: #006736;
+        margin-top: 10px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 2em;
+      }
+      .info{
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        text-align: justify;
+      }        
     }    
     @media (min-width: 1370px) and (max-width:1640px) {
       #p4,#p2,#p7{
@@ -372,7 +503,44 @@
       }
       .fst-content a{
         padding-left: 5px;
-      }          
+      }     
+      #lab-sec{
+        font-size: 37px;
+      }
+      #lab-section{
+        display: grid;
+        grid-template-columns: 250px;
+        justify-content: space-evenly;
+      }
+      #scilab{
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
+      #comlab{
+        grid-column: 2/2;
+        grid-row: 1/1;
+      }
+      #library{
+        grid-column: 3/3;
+        grid-row: 1/1;
+      }
+      .part{
+        width: 250px;
+        border: 4px solid black;
+        border-radius: 2em;
+        background-color: #006736;
+        margin-top: 10px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 2em;
+      }
+      .info{
+        padding: 5px 5px 0px 5px;
+        color: white;
+        font-size: 15px;
+        text-align: justify;
+      }             
     }
     @media (min-width:1010px) and (max-width:1245px) {
       #p3,#p5,#p6,#p7{
@@ -380,6 +548,55 @@
       }
       .fst-content a{
         padding-left: 5px;
+      }        
+      #lab-sec{
+        font-size: 37px;
+      }
+      #lab-section{
+        display: grid;
+        grid-template-columns: 210px;
+        justify-content: space-evenly;
+      }
+      #scilab{
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
+      #scilab:hover{
+        transition: all 1s ease-in-out 0s;
+        transform: translate(290px);           
+      }
+      #comlab{
+        grid-column: 2/2;
+        grid-row: 2/2;
+      }
+      #comlab:hover{
+        transition: all 1s ease-in-out 0s;
+        transform: translateY(-240px);           
+      }
+      #library{
+        grid-column: 3/3;
+        grid-row: 1/1;
+      }
+      #library:hover{
+        transition: all 1s ease-in-out 0s;
+        transform: translate(-290px);           
+      }
+      .part{
+        width: 210px;
+        border: 3px solid black;
+        border-radius: 2em;
+        background-color: #006736;
+        margin-top: 10px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 2em;
+      }
+      .info{
+        padding: 5px 5px 0px 5px;
+        color: white;
+        font-size: 10px;
+        text-align: justify;
       }          
     }
     @media (min-width:820px) and (max-width:1010px) {
@@ -388,7 +605,56 @@
       }
       .fst-content a{
         padding-left: 5px;
-      }          
+      }       
+      #lab-sec{
+        font-size: 34px;
+      }
+      #lab-section{
+        display: grid;
+        grid-template-columns: 340px;
+        justify-content: center;
+      }
+      #scilab{
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }   
+      #scilab:hover{
+        transition: all 1s ease-in-out 0s;
+        transform: translate(180px);   
+      }
+      #comlab{
+        grid-column: 2/2;
+        grid-row: 2/2;
+      }
+      #comlab:hover{
+        transition: all 1s ease-in-out 0s;
+        transform: translate(-180px); 
+      }    
+      #library{
+        grid-column: 1/1;
+        grid-row: 3/3;
+      }
+      #library:hover{
+        transition: all 1s ease-in-out 0s;
+        transform: translate(180px);             
+      }
+      .part{
+        width: 340px;
+        border: 2px solid black;
+        border-radius: 2em;
+        background-color: #006736;
+        margin-top: 20px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 2em;
+      }
+      .info{
+        padding: 7px 5px 3px 5px;
+        color: white;
+        font-size: 15px;
+        text-align: justify;
+      }           
     }   
     @media (min-width:600px) and (max-width:820px) {
       #p3,#p5,#p6,#p2,#p4,#p7{
@@ -405,7 +671,44 @@
       } 
       .fst-content a{
         padding-left: 5px;
-      }               
+      }  
+      #lab-sec{
+        font-size: 20px;
+      }
+      #lab-section{
+        display: grid;
+        grid-template-columns: 320px;
+        justify-content: center;
+      }
+      #scilab{
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
+      #comlab{
+        grid-column: 1/1;
+        grid-row: 2/2;
+      }
+      #library{
+        grid-column: 1/1;
+        grid-row: 3/3;
+      }
+      .part{
+        width: 320px;
+        border: 4px solid black;
+        border-radius: 2em;
+        background-color: #006736;
+        margin-top: 10px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 2em;
+      }
+      .info{
+        padding: 7px 5px 3px 5px;
+        color: white;
+        font-size: 14px;
+        text-align: justify;
+      }         
     }   
     @media (min-width:465px) and (max-width:600px) {
       #p3,#p5,#p6,#p2,#p4,#p7{
@@ -422,7 +725,44 @@
       }      
       .fst-content a{
         padding-left: 5px;
-      }      
+      }     
+      #lab-sec{
+        font-size: 20px;
+      }
+      #lab-section{
+        display: grid;
+        grid-template-columns: 280px;
+        justify-content: center;
+      }
+      #scilab{
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
+      #comlab{
+        grid-column: 1/1;
+        grid-row: 2/2;
+      }
+      #library{
+        grid-column: 1/1;
+        grid-row: 3/3;
+      }
+      .part{
+        width: 280px;
+        border: 3px solid black;
+        border-radius: 2em;
+        background-color: #006736;
+        margin-top: 10px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 2em;
+      }
+      .info{
+        padding: 7px 5px 3px 5px;
+        color: white;
+        font-size: 10px;
+        text-align: justify;
+      }         
     }      
     @media (min-width:353px) and (max-width:465px) {
       #p3,#p5,#p6,#p2,#p4,#p7{
@@ -441,6 +781,43 @@
       .fst-content a{
         padding-left: 2px;
       }
+      #lab-sec{
+        font-size: 16px;
+      }
+      #lab-section{
+        display: grid;
+        grid-template-columns: 210px;
+        justify-content: center;
+      }
+      #scilab{
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
+      #comlab{
+        grid-column: 1/1;
+        grid-row: 2/2;
+      }
+      #library{
+        grid-column: 1/1;
+        grid-row: 3/3;
+      }
+      .part{
+        width: 210px;
+        border: 2px solid black;
+        border-radius: 2em;
+        background-color: #006736;
+        margin-top: 10px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 2em;
+      }
+      .info{
+        padding: 5px 5px 0px 5px;
+        color: white;
+        font-size: 9px;
+        text-align: justify;
+      }        
     }  
     @media (min-width:270px) and (max-width:353px) {
       #p3,#p5,#p6,#p2,#p7,#p1{
@@ -483,54 +860,45 @@
       .carousel-item{
         height: 260px;
       }
-    }        
-    @media(max-width: 353px){
-     #navbar-top {
-      padding-left: 0px;
-      padding-right: 0px;
-      justify-content: center;
-     }
-    }
-    @media (min-width: 296px) and (max-width: 328px) {
-    .carousel-item img {
-    height: 250px;
-    object-fit: contain;
-    }
-
-    .carousel-caption h1 {
-    font-size: 20px;
-    }
-
-    .carousel-caption h3 {
-    font-size: 18px;
-    }
-
-    .carousel-caption h4,
-    .carousel-caption p {
-    font-size: 14px;
-    }
-    }
-    @media (min-width: 240px) and (max-width:296px) {
-    .carousel-item img {
-    background-color: #dbd9d9;
-    height: 300px;
-    object-fit: contain;
-    }
-
-    .carousel-caption h1 {
-    font-size: 14px;
-    }
-
-    .carousel-caption h3 {
-    font-size: 10px;
-    }
-
-    .carousel-caption h4,
-    .carousel-caption p {
-    font-size: 12px;
-    }
-    }            
-    </style>
+      #lab-sec{
+        font-size: 10px;
+      } 
+      #lab-section{
+        display: grid;
+        grid-template-columns: 200px;
+        justify-content: center;
+      }
+      #scilab{
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
+      #comlab{
+        grid-column: 1/1;
+        grid-row: 2/2;
+      }
+      #library{
+        grid-column: 1/1;
+        grid-row: 3/3;
+      }
+      .part{
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 2em;
+        background-color: #006736;
+        margin-top: 10px;
+      }
+      .pics img{
+      padding: 0px;
+      border-radius: 2em;
+      }
+      .info{
+        padding: 7px 5px 3px 5px;
+        color: white;
+        font-size: 8px;
+        text-align: justify;
+      }      
+    }                 
+  </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -547,13 +915,13 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #fff; font-family: fantasy;">Lahore Legion School</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #fff;">Lahore Legion School</h5>
             <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item nav-item-custom">
-                <a class="nav-link active" aria-current="page" href="#about us" style="font-style: italic;">About us</a>
+                <a class="nav-link active" aria-current="page" href="#about us" style="font-style: italic; color: #e8e8e8;">About us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact us" style="color: #e8e8e8; font-style: italic;">Contact us</a>
@@ -695,6 +1063,38 @@
         </div>
       </div>
     </section>
+    <!-- this is library section -->
+     <section>
+        <center style="padding-top: 25px; padding-bottom: 10px;">
+          <h1 id="lab-sec">Library&Labs</h1>
+        </center>
+      <div class="container" id="lab-section">
+        <div class="part" id="scilab">
+            <div class="pics">
+              <img src="koli door.png" alt="" class="container">
+            </div>
+            <div class="info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laudantium commodi numquam facere eius reprehenderit officiis fugit eum. Voluptatum quod iusto accusamus porro nisi ipsa provident sed placeat soluta eos!</p>
+            </div>
+        </div>
+        <div class="part" id="comlab">
+            <div class="pics">
+              <img src="koli door.png" alt="" class="container">
+            </div>
+            <div class="info">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.nsectetur adipisicing elit. Beatae Placeat, ea error officia quo nobis animi in quisquam adipisci cupiditate, deleniti iure dolorum nisi sapiente expedita, ab debitis quibusdam itaque obcaecati!</p>
+            </div>            
+        </div>
+        <div class="part" id="library">
+            <div class="pics">
+              <img src="koli door.png" alt="" class="container">
+            </div>
+            <div class="info">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, laborum. Voluptate excepturi ex explicabo saepe! Voluptatem praesentium beatae hic soluta optio repudiandae dignissimos doloremque nisi, modi, omnis consectetur, eum natus!</p>
+            </div>            
+        </div>
+      </div>
+     </section>
   </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
