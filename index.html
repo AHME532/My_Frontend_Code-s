@@ -91,40 +91,48 @@
     }
     #comlab:hover{
       transition: all 1s ease-in-out 0s;
-      transform: scale(2);
+      transform: scale(1.5);
       z-index: 2;
       
     }
     #scilab:hover{
       transition: all 1s ease-in-out 0s;
-      transform: scale(2);
+      transform: scale(1.5);
       z-index: 2;
     }        
     #library:hover{
       transition: all 1s ease-in-out 0s;
-      transform: scale(2);
+      transform: scale(1.5);
       z-index: 2;
     }    
     #pri-section:hover{
       transition: all 1s ease-in-out 0s;
-      transform: scale(2);
+      transform: scale(1.2);
       z-index: 2;
       background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
       border-color: white;      
     }
     #pre-section:hover{
       transition: all 1s ease-in-out 0s;
-      transform: scale(2);
+      transform: scale(1.2);
       z-index: 2;
       background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
       border-color: white;
     }        
     #sec-section:hover{
       transition: all 1s ease-in-out 0s;
-      transform: scale(2);
+      transform: scale(1.2);
       z-index: 2;
       background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
       border-color: white;      
+    }
+    .zoom-effect{
+      transition: all 1s ease-in-out;
+      transform: scale(1.2);
+      padding: 0px;
+      z-index: 2;
+      background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
+      border-color: white;
     }
     /* media queries for responsiveness of header & main section*/
     @media (min-width: 3200px) and (max-width:5400px)  {
@@ -824,7 +832,7 @@ background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
       width: 170px;
      }      
     }
-    @media (max-width:576px){
+    @media (max-width:577px){
      #fee-structure{
      background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
      }
@@ -845,9 +853,8 @@ background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
       display: grid;
       justify-content: center; 
       border: 2px solid white;
-      border-radius: 20em;
-      padding-bottom: 10px;
-      padding-top:20px ;
+      border-radius: 10em;
+      padding: 20px;
      }
     }
     @media (min-width:465px) and (max-width:600px) {
@@ -1055,13 +1062,13 @@ background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #fff;">Lahore Legion School</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" aria-current="page" style="color: #fff;">Lahore Legion School</h5>
             <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item nav-item-custom">
-                <a class="nav-link active" aria-current="page" href="#about-us" style="font-style: italic; color: #e8e8e8;">About us</a>
+                <a class="nav-link" href="#about-us" style="font-style: italic; color: #e8e8e8;">About us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Libraries" style="color: #e8e8e8; font-style: italic;">Lab activities </a>
@@ -1070,13 +1077,13 @@ background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
                 <a class="nav-link" href="#fee-structure" style="color: #e8e8e8; font-style: italic;">Fee Structure</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#available-admission" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-style: italic; color: #e8e8e8;">
+                <a class="nav-link dropdown-toggle" href="#available-admission" role="button" data-bs-toggle="dropdown" id="admissionMenu" aria-expanded="false" style="font-style: italic; color: #e8e8e8;">
                   Available Admissions
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#pre-section" style="font-style: italic;">Pre-Primary section</a></li>
-                  <li><a class="dropdown-item" href="#pri-section" style="font-style: italic;">Primary section</a></li>
-                  <li><a class="dropdown-item" href="#sec-section" style="font-style: italic;">Secondary section</a></li>
+                  <li><a class="dropdown-item admission-link" href="#pre-section" style="font-style: italic;">Pre-Primary section</a></li>
+                  <li><a class="dropdown-item admission-link" href="#pri-section" style="font-style: italic;">Primary section</a></li>
+                  <li><a class="dropdown-item admission-link" href="#sec-section" style="font-style: italic;">Secondary section</a></li>
                 </ul>
               </li>
             </ul>
@@ -1145,7 +1152,7 @@ background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
           </div>
           <div class="col-md-6 col-lg-6 col-sm-4"style=" padding-left:0px; padding-right: 30px; width: 50%; " id="box2">
             <h2 id="about-s2-h2">Lahore Legion School</h2>
-            <b>Seprate boys & girls campus</b>
+            <p style="font-size: 10px;">Seprate boys & girls campus</p>
             <p style="text-align: justify;" id="p1">
               Lahore Legion School is committed to providing quality education in a safe,
               supportive, and inspiring learning environment. Our mission is to develop
@@ -1313,5 +1320,50 @@ background: linear-gradient(120deg, #005f5f, #008b8b, #16a34a);
      </section> 
   </main>           
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelectorAll(".admission-link").forEach(link => {
+
+  link.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute("href"));
+
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
+    setTimeout(() => {
+
+      target.classList.add("zoom-effect");
+
+      setTimeout(() => {
+        target.classList.remove("zoom-effect");
+      },3000);
+
+    },700);
+
+  });
+
+});
+document.querySelectorAll(".offcanvas .nav-link, .offcanvas .dropdown-item, #registerButton").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    // Available Admissions par click ho to menu band na karo
+    if (link.id === "admissionMenu") return;
+
+    const offcanvasElement = document.getElementById("offcanvasNavbar");
+    const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+
+    if (offcanvas) {
+      offcanvas.hide();
+    }
+
+  });
+
+});
+</script>
 </body>
 </html>
